@@ -10,7 +10,7 @@ import { event } from '@/lib/analytics';
 export default function Home() {
   const handleClick = () => {
     event({
-      action: 'contact_button_click',
+      action: 'contact_button',
       category: 'engagement',
       label: 'Contact Us',
     });
