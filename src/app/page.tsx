@@ -16,6 +16,14 @@ export default function Home() {
     });
   };
 
+  const handleClicked = () => {
+    event({
+      action: 'contact_button_liked',
+      category: 'engagement',
+      label: 'Contact Us',
+    });
+  };
+
   return (
     <>
       <Navbar />
@@ -57,6 +65,7 @@ export default function Home() {
                   <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
                 </Link>
                 <button onClick={handleClick}>Contact Us</button>
+                <button onClick={handleClicked}>Contact Us</button>
 
                 <Link
                   href="/forms"
